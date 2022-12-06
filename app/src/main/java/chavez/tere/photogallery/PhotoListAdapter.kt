@@ -12,7 +12,7 @@ class PhotoViewHolder(
 ) : RecyclerView.ViewHolder(binding.root) {
     fun bind(galleryItem: GalleryItem, onItemClicked: (Uri) -> Unit) {
         binding.itemImageView.load(galleryItem.url) {
-            placeholder(R.drawable.perfil)
+            placeholder(R.drawable.india)
         }
         binding.root.setOnClickListener { onItemClicked(galleryItem.photoPageUri) }
     }
